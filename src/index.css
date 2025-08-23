@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-heading-dark-burgandy: #4c0800;
+  --color-text-dark-brown: #3b2a0b;
+  --color-text-light-white: #ffffff;
+  --color-action-orange: #d95e4f;
+  --color-highlighting-gold: #f0be25;
+  --color-background-biege: #f7e6d3;
+
+  --font-logo: "Cinzel", "serif";
+  --font-primary: "Inter", "sans-serif";
+  --font-footer: "Cormorant Garamond", "serif";
+}
