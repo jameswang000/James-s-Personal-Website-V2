@@ -5,5 +5,11 @@
   "navigation.projects": "Projects",
   "navigation.contactMe": "Contact Me",
   "navigation.lightMode": "Light",
-  "navigation.darkMode": "Dark"
+  "navigation.darkMode": "Dark",
+  "hero.heading": "Hello, I'm James!",
+  "hero.description": "Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
+  "hero.button.primary": "Primary",
+  "hero.button.secondary": "Secondary",
+  "about.heading": "Here's a little about me",
+  "about.description": "Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, "
 }
