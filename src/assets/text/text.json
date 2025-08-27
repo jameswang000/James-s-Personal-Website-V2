@@ -11,5 +11,10 @@
   "hero.button.primary": "Primary",
   "hero.button.secondary": "Secondary",
   "about.heading": "Here's a little about me",
-  "about.description": "Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, "
+  "about.description": "Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit, sedod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet lopsil sip, consectetur adipiscing elit,",
+  "workExperience.resume.heading": "Download my resume:",
+  "workExperience.career.heading": "Explore my career history:",
+  "workExperience.skills.heading": "Check out my skills:",
+  "workExperience.resume.button.primary": "View",
+  "workExperience.resume.button.secondary": "Download"
 }

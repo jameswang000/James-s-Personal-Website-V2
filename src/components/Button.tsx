@@ -6,11 +6,17 @@ export interface ButtonProps {
 
 export const Button = ({ onClick, variant, label }: ButtonProps) => {
   const isPrimary = variant === "primary";
-  const buttonFill = isPrimary ? "action-orange" : "transparent";
-  const buttonTextColor = isPrimary ? "text-light-white" : "action-orange";
-  return (
+  return isPrimary ? (
     <button
-      className={`py-3 px-6 bg-${buttonFill} text-${buttonTextColor} border-[5px] border-action-orange
+      className={`py-2 px-6 bg-action-orange text-text-light-white border-[5px] border-action-orange
+                  rounded-2xl text-2xl font-bold`}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  ) : (
+    <button
+      className={`py-2 px-6 bg-transparent text-action-orange border-[5px] border-action-orange
                   rounded-2xl text-2xl font-bold`}
       onClick={onClick}
     >
