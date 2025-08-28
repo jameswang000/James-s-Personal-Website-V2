@@ -1,5 +1,5 @@
 import * as RadixSwitch from "@radix-ui/react-switch";
-import { textJSON } from "../assets/text";
+import { textJSON } from "../../assets";
 
 export const DarkModeSwitch = () => {
   return (

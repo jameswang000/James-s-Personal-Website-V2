@@ -1,7 +1,7 @@
-import { WorkIcon } from "../assets";
-import { textJSON } from "../assets/text";
-import { DarkModeSwitch } from "./DarkModeSwitch";
-import { Seperator } from "./Seperator";
+import { WorkIcon } from "../../assets";
+import { textJSON } from "../../assets";
+import { DarkModeSwitch } from "../util";
+import { Seperator } from "../util";
 
 export const Navbar = () => {
   return (

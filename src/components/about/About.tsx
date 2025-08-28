@@ -1,5 +1,5 @@
-import { EndMark } from "../assets";
-import { textJSON } from "../assets/text";
+import { EndMark } from "../../assets";
+import { textJSON } from "../../assets";
 
 export const About = () => {
   return (

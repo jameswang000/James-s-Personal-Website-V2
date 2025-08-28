@@ -15,7 +15,7 @@ export const CareerCard = ({
 }: CareerCardProps) => {
   return (
     <div
-      className={`group w-72 h-25 [perspective:1000px] ${className}`}
+      className={`group w-68 h-25 [perspective:1000px] ${className}`}
       aria-hidden={false}
     >
       {/* The inner element rotates in 3D */}

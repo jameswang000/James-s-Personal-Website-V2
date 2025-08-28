@@ -1,4 +1,4 @@
-import { skills, textJSON } from "../assets/text";
+import { skills, textJSON } from "../../assets";
 import { SkillCard } from "./SkillCard";
 
 export const SkillsCard = () => {

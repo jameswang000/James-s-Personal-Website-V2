@@ -1,5 +1,5 @@
-import { textJSON } from "../assets/text";
-import { Button } from "./Button";
+import { textJSON } from "../../assets";
+import { Button } from "../util";
 
 export const ResumeCard = () => {
   return (
@@ -13,7 +13,7 @@ export const ResumeCard = () => {
           {textJSON["workExperience.resume.heading"]}
         </h3>
         {/* PDF Preview */}
-        <div className="flex flex-col p-4 bg-text-dark-brown/10 rounded-2xl gap-3 justify-center items-center">
+        <div className="flex flex-col p-4 bg-text-dark-brown/10 rounded-2xl gap-3 justify-center items-start">
           <object
             data="/resume.pdf"
             type="application/pdf"
@@ -32,6 +32,7 @@ export const ResumeCard = () => {
                 variant="primary"
                 label={textJSON["workExperience.resume.button.primary"]}
                 onClick={() => {}}
+                size="lg"
               />
             </a>
             <a href="/resume.pdf" download>
@@ -39,6 +40,7 @@ export const ResumeCard = () => {
                 variant="secondary"
                 label={textJSON["workExperience.resume.button.secondary"]}
                 onClick={() => {}}
+                size="lg"
               />
             </a>
           </div>

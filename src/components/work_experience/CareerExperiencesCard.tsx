@@ -1,5 +1,5 @@
-import { textJSON } from "../assets/text";
-import { jobs } from "../assets/text";
+import { textJSON } from "../../assets";
+import { jobs } from "../../assets";
 import { CareerCard } from "./CareerCard";
 
 export const CareerExperiencesCard = () => {

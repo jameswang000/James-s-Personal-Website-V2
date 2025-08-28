@@ -7,6 +7,8 @@ import {
   Hero,
   About,
   WorkExperience,
+  Projects,
+  Forms,
 } from "./components";
 import "./index.css";
 
@@ -18,6 +20,8 @@ createRoot(document.getElementById("root")!).render(
         <Hero />
         <About />
         <WorkExperience />
+        <Projects />
+        <Forms />
       </PageBody>
     </Page>
   </StrictMode>
