@@ -24,5 +24,13 @@
   "forms.contactForm.messageInput.placeholder": "Enter your message",
   "forms.contactForm.emailInput.placeholder": "Enter email address",
   "forms.contactForm.sendButton": "Send",
-  "forms.externalLinksCard.heading": "Find me here as well!"
+  "forms.externalLinksCard.heading": "Find me here as well!",
+  "footer.backToTop": "Back to top",
+  "footer.about": "About",
+  "footer.workExperience": "Work Experience",
+  "footer.projects": "Projects",
+  "footer.contactMe": "Contact Me",
+  "email": "jmaeswnag@gmail.com",
+  "footer.city": "Pittsburgh, PA",
+  "footer.copyRight": "James Wang © 2025 · Hosted on GitHub Pages"
 }

@@ -9,6 +9,7 @@ import {
   WorkExperience,
   Projects,
   Forms,
+  Footer,
 } from "./components";
 import "./index.css";
 
@@ -22,6 +23,7 @@ createRoot(document.getElementById("root")!).render(
         <WorkExperience />
         <Projects />
         <Forms />
+        <Footer />
       </PageBody>
     </Page>
   </StrictMode>
