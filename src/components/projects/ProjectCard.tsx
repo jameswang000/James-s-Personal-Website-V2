@@ -19,23 +19,29 @@ export const ProjectCard = ({
   return (
     <div
       className="flex flex-col justify-center items-center p-4 rounded-2xl shadow-xl
-               bg-highlighting-gold/20 border border-text-dark-brown/30 gap-4"
+                 bg-highlighting-gold/20 border border-text-dark-brown/30 gap-4"
     >
       <div className="flex flex-row justify-between w-full">
         <div className="flex flex-row items-center justify-start gap-3">
-          <Icon className="w-10 h-10" />
-          <h3 className="font-semibold text-text-dark-brown text-2xl ">
+          <Icon
+            className="w-10 h-10 transition-transform duration-200 ease-in-out
+                           group-hover:scale-110"
+          />
+          <h3 className="font-semibold text-text-dark-brown text-2xl">
             {heading}
           </h3>
-          {badges.map((label) => {
-            return <Badge label={label} />;
-          })}
+          {badges.map((label) => (
+            <Badge key={label} label={label} />
+          ))}
         </div>
         <div className="flex flex-col items-center justify-center">
           <a
             href={url}
             target="_blank"
-            className="bg-action-orange text-text-light-white text-sm font-bold px-3 py-1.5 rounded-lg"
+            className="bg-action-orange text-text-light-white text-sm font-bold px-3 py-1.5 rounded-lg
+                       transition-transform duration-200 ease-in-out
+                       hover:bg-orange-500 hover:scale-105
+                       active:bg-orange-600 active:scale-95"
           >
             {textJSON["projects.cards.explore"]}
           </a>

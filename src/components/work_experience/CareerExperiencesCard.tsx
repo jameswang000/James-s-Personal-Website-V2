@@ -2,9 +2,12 @@ import { textJSON } from "../../assets";
 import { jobs } from "../../assets";
 import { CareerCard } from "./CareerCard";
 
+export const CAREER_EXPERIENCE_ID = "career_experience_id";
+
 export const CareerExperiencesCard = () => {
   return (
     <div
+      id={CAREER_EXPERIENCE_ID}
       className="bg-highlighting-gold/20 border-1 border-text-dark-brown/30 shadow-2xl 
                      p-6 rounded-2xl w-full gap-5
                      flex flex-col justify-center items-start"
@@ -13,8 +16,9 @@ export const CareerExperiencesCard = () => {
         {textJSON["workExperience.career.heading"]}
       </h3>
       <div className="flex flex-row flex-wrap gap-2">
-        {jobs.map((careerCardProps) => {
-          return <CareerCard {...careerCardProps} />;
+        {jobs.map((careerCardData) => {
+          const { id, ...careerCardProps } = careerCardData;
+          return <CareerCard {...careerCardProps} key={id} />;
         })}
       </div>
     </div>

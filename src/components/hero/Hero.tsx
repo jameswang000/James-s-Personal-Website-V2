@@ -1,10 +1,17 @@
 import { textJSON } from "../../assets";
 import { Button } from "../util";
 import { portraitImagePNG } from "../../assets";
+import { CAREER_EXPERIENCE_ID } from "../work_experience";
+import { FORMS_SECTION_ID } from "../forms";
+
+export const HERO_SECTION_ID = "hero-section";
 
 export const Hero = () => {
   return (
-    <div className=" py-16 px-40 pb-20 font-primary bg-gradient-to-b from-90% from-action-orange/20 to-action-orange/0">
+    <div
+      id={HERO_SECTION_ID}
+      className=" py-16 px-40 pb-20 font-primary bg-gradient-to-b from-90% from-action-orange/20 to-action-orange/0"
+    >
       <div className="flex flex-col justify-center items-center xl:flex-row xl:items-center xl:justify-center gap-12">
         <div className="relative">
           <div
@@ -16,22 +23,29 @@ export const Hero = () => {
             <h1 className="font-bold text-7xl text-heading-dark-burgandy">
               {textJSON["hero.heading"]}
             </h1>
-            <p className="font-normal text-4xl text-text-dark-brown text-center xl:text-left">
-              {textJSON["hero.description"]}
+            <p className="pl-0.5 font-normal text-4xl text-text-dark-brown text-center xl:text-left">
+              {textJSON["hero.description.body"]}
+            </p>
+            <p className="font-semibold text-4xl text-text-dark-brown text-center xl:text-left">
+              {textJSON["hero.description.cta"]}
             </p>
             <div className="flex flex-row gap-3">
-              <Button
-                variant="primary"
-                onClick={() => {}}
-                label={textJSON["hero.button.primary"]}
-                size="lg"
-              />
-              <Button
-                variant="secondary"
-                onClick={() => {}}
-                label={textJSON["hero.button.secondary"]}
-                size="lg"
-              />
+              <a href={`#${CAREER_EXPERIENCE_ID}`}>
+                <Button
+                  variant="primary"
+                  onClick={() => {}}
+                  label={textJSON["hero.button.primary"]}
+                  size="lg"
+                />
+              </a>
+              <a href={`#${FORMS_SECTION_ID}`}>
+                <Button
+                  variant="secondary"
+                  onClick={() => {}}
+                  label={textJSON["hero.button.secondary"]}
+                  size="lg"
+                />
+              </a>
             </div>
           </div>
         </div>

@@ -12,8 +12,9 @@ export const SkillsCard = () => {
         {textJSON["workExperience.skills.heading"]}
       </h3>
       <div className="flex flex-row flex-wrap gap-2">
-        {skills.map((skillCardProps) => {
-          return <SkillCard {...skillCardProps} />;
+        {skills.map((skillCardData) => {
+          const { id, ...skillCardProps } = skillCardData;
+          return <SkillCard {...skillCardProps} key={id} />;
         })}
       </div>
     </div>

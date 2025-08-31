@@ -5,7 +5,7 @@ export const ResumeCard = () => {
   return (
     <div
       className="bg-highlighting-gold/20 border-1 border-text-dark-brown/30 shadow-2xl 
-                 p-6 rounded-2xl w-full
+                 p-6 rounded-2xl w-full h-full
                  flex flex-col justify-center items-center"
     >
       <div className="flex flex-col items-start justify-center gap-2">
@@ -17,7 +17,7 @@ export const ResumeCard = () => {
           <object
             data="/resume.pdf"
             type="application/pdf"
-            className="w-full h-[400px] border rounded"
+            className="w-full h-[400px] border-1 border-text-dark-brown rounded shadow-xl"
           >
             <p>
               PDF preview not supported.{" "}

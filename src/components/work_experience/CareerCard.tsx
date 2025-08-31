@@ -52,7 +52,7 @@ export const CareerCard = ({
         <div
           className="
             absolute inset-0
-            p-3 rounded-2xl shadow-xl
+            py-2 px-3 rounded-2xl shadow-xl
             bg-highlighting-gold/30 border border-text-dark-brown/30
             [transform:rotateY(180deg)]
             [backface-visibility:hidden]

@@ -15,6 +15,10 @@
   --font-footer: "Cormorant Garamond", "serif";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .flip-card {
   perspective: 1000px; /* depth effect */
 }

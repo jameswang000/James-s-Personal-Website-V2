@@ -1,9 +1,27 @@
 import { textJSON, WorkIcon } from "../../assets";
+import { ABOUT_SECTION_ID } from "../about";
+import { FORMS_SECTION_ID } from "../forms";
+import { NAVBAR_SECTION_ID } from "../navigation_bar";
+import { PROJECTS_SECTION_ID } from "../projects";
 import { DotSeperator } from "../util";
+import { WORK_EXPERIENCE_SECTION_ID } from "../work_experience";
+
+export const FOOTER_SECTION_ID = "footer-section";
 
 export const Footer = () => {
+  const footerLinks = [
+    { id: NAVBAR_SECTION_ID, label: textJSON["footer.backToTop"] },
+    { id: ABOUT_SECTION_ID, label: textJSON["footer.about"] },
+    {
+      id: WORK_EXPERIENCE_SECTION_ID,
+      label: textJSON["footer.workExperience"],
+    },
+    { id: PROJECTS_SECTION_ID, label: textJSON["footer.projects"] },
+    { id: FORMS_SECTION_ID, label: textJSON["footer.contactMe"] },
+  ];
+
   return (
-    <div className="relative">
+    <div id={FOOTER_SECTION_ID} className="relative">
       <p className="absolute bottom-1 right-4 text-[0.5rem] text-text-light-white/75">
         {textJSON["footer.copyRight"]}
       </p>
@@ -17,17 +35,25 @@ export const Footer = () => {
             {textJSON.logo}
           </h1>
         </div>
+
         <div className="flex flex-row gap-4 text-xl font-semibold xl:self-center flex-1/3 text-nowrap">
-          <a href="">{textJSON["footer.backToTop"]}</a>
-          <DotSeperator />
-          <a href="">{textJSON["footer.about"]}</a>
-          <DotSeperator />
-          <a href="">{textJSON["footer.workExperience"]}</a>
-          <DotSeperator />
-          <a href="">{textJSON["footer.projects"]}</a>
-          <DotSeperator />
-          <a href="">{textJSON["footer.contactMe"]}</a>
+          {footerLinks.map((link, index) => (
+            <span key={link.id} className="flex items-center gap-2">
+              <a
+                href={`#${link.id}`}
+                className="relative text-text-light-white transition-all duration-200 ease-in-out
+                           hover:text-highlighting-gold hover:scale-101
+                           active:scale-95"
+              >
+                {link.label}
+                {/* Optional underline animation */}
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-300 transition-all duration-200 ease-in-out hover:w-full"></span>
+              </a>
+              {index < footerLinks.length - 1 && <DotSeperator />}
+            </span>
+          ))}
         </div>
+
         <div
           className="flex-1/3 flex flex-row gap-2 justify-start xl:justify-end
                         text-xl font-bold"

@@ -3,9 +3,10 @@ import React from "react";
 export interface ButtonProps {
   onClick: React.MouseEventHandler<HTMLButtonElement>;
   variant: "primary" | "secondary";
-  label: string;
+  label: string | React.ReactNode;
   size?: "sm" | "md" | "lg" | "xl"; // new
   className?: string;
+  disabled?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -14,6 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
   label,
   size = "md",
   className = "",
+  disabled = false,
 }) => {
   const base = `
     inline-flex items-center justify-center
@@ -67,6 +69,7 @@ export const Button: React.FC<ButtonProps> = ({
       className={classes}
       type="button"
       aria-pressed="false"
+      disabled={disabled}
     >
       {label}
     </button>
