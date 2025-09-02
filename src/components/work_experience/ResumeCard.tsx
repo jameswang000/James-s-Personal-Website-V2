@@ -15,7 +15,7 @@ export const ResumeCard = () => {
         {/* PDF Preview */}
         <div className="flex flex-col p-4 bg-text-dark-brown/10 rounded-2xl gap-3 justify-center items-start">
           <object
-            data="/resume.pdf"
+            data="resume.pdf"
             type="application/pdf"
             className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-1 border-text-dark-brown rounded shadow-xl"
           >
@@ -28,7 +28,7 @@ export const ResumeCard = () => {
           </object>
           <div className="flex gap-2 flex-col sm:flex-row w-full">
             <a
-              href="/resume.pdf"
+              href="resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
@@ -41,7 +41,7 @@ export const ResumeCard = () => {
                 className="w-full sm:w-auto"
               />
             </a>
-            <a href="/resume.pdf" download className="w-full sm:w-auto">
+            <a href="resume.pdf" download className="w-full sm:w-auto">
               <Button
                 variant="secondary"
                 label={textJSON["workExperience.resume.button.secondary"]}
