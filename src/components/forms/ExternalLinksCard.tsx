@@ -6,9 +6,9 @@ export const ExternalLinksCard = () => {
     <div
       className="flex flex-col gap-5 items-start justify-start
                    bg-highlighting-gold/20 border-1 border-text-dark-brown/30 
-                    shadow-2xl p-8 rounded-2x rounded-2xl h-full"
+                    shadow-2xl p-4 sm:p-6 lg:p-8 rounded-2xl h-full"
     >
-      <h3 className="text-heading-dark-burgandy font-semibold text-4xl">
+      <h3 className="text-heading-dark-burgandy font-semibold text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
         {textJSON["forms.externalLinksCard.heading"]}
       </h3>
       <div className="flex flex-col gap-2 justify-center items-start w-full">

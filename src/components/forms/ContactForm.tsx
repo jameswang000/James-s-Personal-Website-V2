@@ -64,17 +64,17 @@ export const ContactForm = () => {
     <ToastPrimitive.Provider swipeDirection="right">
       <form
         className="flex flex-col gap-3 items-start justify-start
-                 bg-highlighting-gold/20 border-1 border-text-dark-brown/30 shadow-2xl p-8 rounded-2xl h-full"
+                 bg-highlighting-gold/20 border-1 border-text-dark-brown/30 shadow-2xl p-4 sm:p-6 lg:p-8 rounded-2xl h-full"
       >
-        <h3 className="text-heading-dark-burgandy font-semibold text-4xl">
+        <h3 className="text-heading-dark-burgandy font-semibold text-xl sm:text-2xl lg:text-3xl xl:text-4xl">
           {textJSON["forms.contactForm.heading"]}
         </h3>
-        <p className="font-normal text-xl text-text-dark-brown">
+        <p className="font-normal text-base sm:text-lg lg:text-xl text-text-dark-brown">
           {textJSON["forms.contactForm.description"]}
         </p>
 
         <textarea
-          className="bg-text-light-white font-medium text-xl text-text-dark-brown p-3 w-full border-1 rounded-sm"
+          className="bg-text-light-white font-medium text-sm sm:text-base lg:text-xl text-text-dark-brown p-2 sm:p-3 w-full border-1 rounded-sm"
           name="message"
           id="message"
           placeholder={textJSON["forms.contactForm.messageInput.placeholder"]}
@@ -83,9 +83,9 @@ export const ContactForm = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
 
-        <div className="flex flex-row justify-between items-start w-full gap-2">
+        <div className="flex flex-col sm:flex-row justify-between items-start w-full gap-2">
           <input
-            className="bg-text-light-white font-medium text-xl text-text-dark-brown p-3 w-full border-1 rounded-sm"
+            className="bg-text-light-white font-medium text-sm sm:text-base lg:text-xl text-text-dark-brown p-2 sm:p-3 w-full border-1 rounded-sm"
             type="email"
             name="email"
             id="email"
@@ -98,6 +98,7 @@ export const ContactForm = () => {
             size="md"
             disabled={isSending}
             onClick={() => handleSubmit()}
+            className="w-full sm:w-auto mt-2 sm:mt-0"
             label={
               isSending ? (
                 <div className="flex items-center gap-2">

@@ -27,16 +27,16 @@ export const Footer = () => {
       </p>
       <div
         className="flex flex-col items-start justify-start bg-heading-dark-burgandy text-text-light-white font-footer
-                 xl:flex-row xl:items-center py-4 px-8 gap-1 lg:gap-0"
+                 lg:flex-row lg:items-center py-4 px-4 sm:px-8 gap-3 sm:gap-1 lg:gap-0"
       >
-        <div className="flex flex-row items-center flex-1/3 gap-6">
+        <div className="flex flex-row items-center flex-1/3 gap-3 sm:gap-6">
           <WorkIcon />
-          <h1 className="font-logo font-normal text-4xl pt-1">
+          <h1 className="font-logo font-normal text-2xl sm:text-3xl lg:text-4xl pt-1">
             {textJSON.logo}
           </h1>
         </div>
 
-        <div className="flex flex-row gap-4 text-xl font-semibold xl:self-center flex-1/3 text-nowrap">
+        <div className="flex flex-row flex-wrap gap-2 sm:gap-4 text-sm sm:text-base lg:text-xl font-semibold lg:self-center flex-4/9">
           {footerLinks.map((link, index) => (
             <span key={link.id} className="flex items-center gap-2">
               <a
@@ -55,8 +55,8 @@ export const Footer = () => {
         </div>
 
         <div
-          className="flex-1/3 flex flex-row gap-2 justify-start xl:justify-end
-                        text-xl font-bold"
+          className="flex-1/3 flex flex-row gap-2 justify-start lg:justify-end
+                        text-sm sm:text-base lg:text-xl font-bold"
         >
           <p>{textJSON.email}</p>
           <DotSeperator />

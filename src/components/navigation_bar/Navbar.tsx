@@ -3,7 +3,6 @@ import { textJSON } from "../../assets";
 import { ABOUT_SECTION_ID } from "../about";
 import { FORMS_SECTION_ID } from "../forms";
 import { PROJECTS_SECTION_ID } from "../projects";
-import { DarkModeSwitch } from "../util";
 import { Seperator } from "../util";
 import { CAREER_EXPERIENCE_ID } from "../work_experience";
 
@@ -13,14 +12,18 @@ export const Navbar = () => {
   return (
     <div
       id={NAVBAR_SECTION_ID}
-      className="flex flex-row bg-heading-dark-burgandy text-text-light-white items-center gap-12 py-3 px-8 flex-wrap"
+      className="flex flex-col sm:flex-row bg-heading-dark-burgandy text-text-light-white items-center gap-3 sm:gap-6 lg:gap-12 py-3 px-4 sm:px-8 flex-wrap"
     >
-      <div className="flex flex-row items-center gap-6">
+      <div className="flex flex-row items-center gap-3 sm:gap-6">
         <WorkIcon />
-        <h1 className="font-logo font-normal text-4xl pt-1">{textJSON.logo}</h1>
+        <h1 className="font-logo font-normal text-2xl sm:text-3xl lg:text-4xl pt-1">
+          {textJSON.logo}
+        </h1>
       </div>
-      <Seperator orientation="vertical" />
-      <div className="flex flex-row gap-9 font-primary font-semibold text-xl items-center self-center">
+      <div className="hidden sm:block">
+        <Seperator orientation="vertical" />
+      </div>
+      <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 lg:gap-9 font-primary font-semibold text-sm sm:text-lg lg:text-xl items-center self-center">
         {[
           { id: ABOUT_SECTION_ID, label: textJSON["navigation.about"] },
           {
@@ -43,12 +46,13 @@ export const Navbar = () => {
           </a>
         ))}
       </div>
-      <div className="flex-1"></div>
+      {/* Todo: Add dark mode switch */
+      /* <div className="flex-1"></div>
       <div className="items-center">
         <div className="hidden">
           <DarkModeSwitch />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

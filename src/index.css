@@ -19,6 +19,36 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mobile-first responsive styles */
+@media (max-width: 640px) {
+  /* Ensure text remains readable on small screens */
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Prevent horizontal overflow */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Make images responsive */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
 .flip-card {
   perspective: 1000px; /* depth effect */
 }
