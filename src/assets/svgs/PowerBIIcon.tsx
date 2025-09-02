@@ -3,7 +3,7 @@ export const PowerBIIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
     <svg
       width="70"
       height="84"
-      viewBox="0 0 70 84"
+      viewBox="0 0 50 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

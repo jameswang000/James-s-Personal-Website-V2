@@ -16,7 +16,7 @@ export const SkillCard = ({ Icon, heading, description }: SkillCardProps) => {
                  hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400
                      border-1 border-text-dark-brown/20 shadow-lg"
         >
-          <Icon className="w-16 h-16" aria-hidden />
+          <Icon className="w-12 h-12" aria-hidden />
           <span className="sr-only">Open preview</span>
         </button>
       </RadixHoverCard.Trigger>
