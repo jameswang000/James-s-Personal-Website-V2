@@ -21,7 +21,7 @@ export const ResumeCard = () => {
           >
             <p>
               PDF preview not supported.{" "}
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
                 Open PDF
               </a>
             </p>
